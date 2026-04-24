@@ -119,7 +119,7 @@ El flujo general es:
 MedAlert+/
 │
 ├── api/
-│   ├── app.py              # Punto de entrada, configuración FastAPI y CORS
+│   ├── py              # Punto de entrada, configuración FastAPI y CORS
 │   ├── jwt_config.py       # Configuración y helpers de JWT
 │   └── portadortoken.py    # Middleware de autenticación Bearer
 │
@@ -320,8 +320,8 @@ Todo el ecosistema está protegido con el estándar **JSON Web Tokens (JWT)**:
 
 **1. Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/MedAlertPlus.git
-cd MedAlertPlus
+git clone https://github.com/KouDionicio/MediTech.git
+cd MediTech
 ```
 
 **2. Crear y activar el entorno virtual**
@@ -361,7 +361,7 @@ python -c "from config.db import Base, engine; meditech.metadata.create_all(engi
 
 **6. Levantar el servidor**
 ```bash
-python -m uvicorn api.app:app --reload
+python -m uvicorn main:app --reload
 ```
 
 El servidor estará disponible en `http://localhost:8000`.
