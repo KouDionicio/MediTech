@@ -1,8 +1,10 @@
+import enum
 from datetime import datetime
+
 from sqlalchemy import Column, Integer, String, DateTime, Enum as SQLEnum
 from sqlalchemy.orm import relationship
+
 from app.db.base import Base
-import enum
 
 
 class RolUsuario(str, enum.Enum):

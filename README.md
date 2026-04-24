@@ -356,7 +356,7 @@ JWT_EXPIRE_MINUTES=60
 
 **5. Crear las tablas en la base de datos**
 ```bash
-python -c "from config.db import Base, engine; Base.metadata.create_all(engine)"
+python -c "from config.db import Base, engine; meditech.metadata.create_all(engine)"
 ```
 
 **6. Levantar el servidor**
